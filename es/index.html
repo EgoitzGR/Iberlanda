@@ -34,7 +34,7 @@ is_home: true
         </section>
 
                 <section class="local-interior" style="text-align: center; max-width: 1200px; margin: 0 auto 4rem; padding: 0 2rem;">
-            <img src="../images/InteriorIberlanda.png" alt="Interior de Taberna Iberlanda" style="width: 100%; height: 450px; object-fit: cover; border-radius: 12px; box-shadow: var(--sombra-fuerte);">
+            <img src="../images/InteriorIberlanda.png" alt="Interior de Taberna Iberlanda" style="width: 100%; max-height: 450px; aspect-ratio: 16/9; object-fit: cover; border-radius: 12px; box-shadow: var(--sombra-fuerte);">
         </section>
 
         <section class="destacados">
@@ -136,9 +136,9 @@ is_home: true
 
                 </div>
                 
-                                <div class="indicadores-carrusel">
-                    <span class="indicador activo" style="cursor: pointer; padding: 0 10px; font-size: 1.5rem; color: var(--color-acento);" onclick="document.getElementById('carrusel').scrollBy({left: -320, behavior: 'smooth'})">❮</span>
-                    <span class="indicador activo" style="cursor: pointer; padding: 0 10px; font-size: 1.5rem; color: var(--color-acento);" onclick="document.getElementById('carrusel').scrollBy({left: 320, behavior: 'smooth'})">❯</span>
+                                <div class="indicadores-carrusel" style="display: flex; justify-content: center; gap: 1rem; margin-top: 2rem;">
+                    <button class="btn-carrusel" aria-label="Anterior" onclick="document.getElementById('carrusel').scrollBy({left: -320, behavior: 'smooth'})" style="background: var(--color-principal); color: white; border: none; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; cursor: pointer; box-shadow: var(--sombra-suave);">◀</button>
+                    <button class="btn-carrusel" aria-label="Siguiente" onclick="document.getElementById('carrusel').scrollBy({left: 320, behavior: 'smooth'})" style="background: var(--color-principal); color: white; border: none; border-radius: 50%; width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; cursor: pointer; box-shadow: var(--sombra-suave);">▶</button>
                 </div>
             </div>
             
