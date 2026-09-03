@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tradición, sabor y buen ambiente en el corazón de Arrankudiaga.">
+    <meta property="og:title" content="Carta - Taberna Iberlanda">
+    <meta property="og:description" content="Tradición, sabor y buen ambiente en el corazón de Arrankudiaga.">
+    <meta property="og:type" content="website">
+    <title>Carta - Taberna Iberlanda</title>
+    
+    <!-- CSS modularizado -->
+    <link rel="stylesheet" href="/Iberlanda/style/variables.css?v=4">
+    <link rel="stylesheet" href="/Iberlanda/style/layout.css?v=4">
+    <link rel="stylesheet" href="/Iberlanda/style/components.css?v=4">
+    
+    
+</head>
+<body>
+    <header>
+    <div class="logoCabecera">
+        <svg class="icon-fork-knife" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--color-acento)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+        <img src="/Iberlanda/assets/logo.png" alt="">
+    </div>
+
+    <nav aria-label="Navegación principal">
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        <ul>
+            
+                <li><a href="/Iberlanda/es/index.html" ><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> <span>Inicio</span></a></li>
+                <li><a href="/Iberlanda/es/carta.html" class="active"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg> <span>Carta</span></a></li>
+                <li><a href="/Iberlanda/es/contacto.html" ><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> <span>Contacto</span></a></li>
+                <li><a href="/Iberlanda/es/reservas.html" ><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> <span>Reserva</span></a></li>
+            
+            <li><a href="tel:+34676074839" class="btn-telefono"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> <span>+34 676 07 48 39</span></a></li>
+        </ul>
+        <div class="lang-switcher">
+            <a href="/Iberlanda/es/carta.html" class="active-lang">ES</a>
+            <a href="/Iberlanda/eus/carta.html" >EU</a>
+        </div>
+    </nav>
+</header>
+
+    
+    <main class="contenedor-carta">
+                <h1>Nuestra Carta</h1>
+        <div style="text-align: center;">
+            <button class="boton-ver-oficial" onclick="document.getElementById('modalCarta').classList.add('mostrar')">
+                📷 Ver Carta Original en Imagen
+            </button>
+        </div>
+
+        <div id="modalCarta" class="modal-imagen">
+            <span class="cerrar-modal"
+                onclick="document.getElementById('modalCarta').classList.remove('mostrar')">&times;</span>
+            <img loading="lazy" src="../images/carta/Carta_ESP.png" class="modal-contenido" id="imgModalCarta"
+                onclick="this.classList.toggle('zoomed')" alt="Carta Oficial">
+            <p style="color: white; margin-top: 10px;">(Haz clic en la imagen para ampliar/reducir)</p>
+        </div>
+        <p class="nota-alergenos">Cualquier suplemento que se desee incrementar supondrá un 0,70 € extra. En caso de que
+            sea alérgico o vegano, por favor informen al personal.</p>
+
+        <!-- SECCIÓN: PLATOS COMBINADOS -->
+        <details class="seccion-menu" open>
+            <summary>Platos Combinados</summary>
+            <div class="lista-platos">
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Arene</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span><span class="badge huevo">Huevo</span><span
+                                class="badge lacteos">Lácteos</span>
+                            <span class="precio">12,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Pechuga a la plancha, croquetas, ensalada, patatas y huevo frito.</p>
+                </div>
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Elexalde</span>
+                        <div class="precio-alergenos">
+                            <span class="badge huevo">Huevo</span>
+                            <span class="precio">12,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Lomo, huevo frito, pimiento rojo y patatas.</p>
+                </div>
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Garondo Berria</span>
+                        <div class="precio-alergenos">
+                            <span class="badge huevo">Huevo</span>
+                            <span class="precio">12,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Filete de ternera, huevo frito, patatas y pimiento verde.</p>
+                </div>
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Zabalzar</span>
+                        <div class="precio-alergenos">
+                            <span class="precio">12,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Secreto Ibérico, patatas, pimiento rojo y ensalada.</p>
+                </div>
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Uribarri</span>
+                        <div class="precio-alergenos">
+                            <span class="badge huevo">Huevo</span>
+                            <span class="precio">10,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Huevos fritos (chorizo, bacón o jamón) y patatas.</p>
+                </div>
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Cachopo</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span><span class="badge huevo">Huevo</span>
+                            <span class="precio">17,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Cachopo y patatas.</p>
+                </div>
+            </div>
+        </details>
+
+        <!-- SECCIÓN: HAMBURGUESAS -->
+        <details class="seccion-menu">
+            <summary>Hamburguesas</summary>
+            <div class="lista-platos">
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Arbide</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span><span class="badge lacteos">Lácteos</span>
+                            <span class="precio">6,50 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Hamburguesa, queso, lechuga y tomate.</p>
+                </div>
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Telleri</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span><span class="badge huevo">Huevo</span><span
+                                class="badge lacteos">Lácteos</span><span class="badge sulfitos">Sulfitos</span>
+                            <span class="precio">7,50 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Hamburguesa, queso, bacón, huevo frito, lechuga, tomate y cebolla
+                        caramelizada.</p>
+                </div>
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Goizarri</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span><span class="badge lacteos">Lácteos</span><span
+                                class="badge sulfitos">Sulfitos</span>
+                            <span class="precio">7,50 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Hamburguesa, queso, bacón, cebolla caramelizada, pepinillo, pimiento rojo,
+                        lechuga, salsa picante y jalapeños.</p>
+                </div>
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Ustara</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span><span class="badge lacteos">Lácteos</span><span
+                                class="badge sulfitos">Sulfitos</span>
+                            <span class="precio">7,50 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Hamburguesa, queso de cabra, pimientos verdes, cebolla caramelizada y bacón.
+                    </p>
+                </div>
+            </div>
+        </details>
+
+        <!-- SECCIÓN: ENSALADAS -->
+        <details class="seccion-menu">
+            <summary>Ensaladas</summary>
+            <div class="lista-platos">
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Mixta</span>
+                        <div class="precio-alergenos">
+                            <span class="badge pescado">Pescado</span><span class="badge huevo">Huevo</span>
+                            <span class="precio">9,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Lechuga, tomate, cebolla, atún, huevo cocido, aceituna y espárragos.</p>
+                </div>
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Simple</span>
+                        <div class="precio-alergenos">
+                            <span class="precio">6,50 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Lechuga, cebolla y tomate.</p>
+                </div>
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Tomate</span>
+                        <div class="precio-alergenos">
+                            <span class="badge pescado">Pescado</span>
+                            <span class="precio">12,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Tomate, atún, cebolla frita, pimiento rojo y aceitunas.</p>
+                </div>
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Queso de Cabra</span>
+                        <div class="precio-alergenos">
+                            <span class="badge lacteos">Lácteos</span><span class="badge frutos-secos">Frutos
+                                Secos</span><span class="badge sulfitos">Sulfitos</span>
+                            <span class="precio">12,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Lechuga, tomate, cebolla caramelizada, bacón, queso de cabra y nuez.</p>
+                </div>
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Pollo</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span><span class="badge sulfitos">Sulfitos</span>
+                            <span class="precio">12,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Lechuga, tomate, pimiento rojo, cebolla frita, pollo crujiente y champiñones.
+                    </p>
+                </div>
+            </div>
+        </details>
+
+        <!-- SECCIÓN: SANDWICHES -->
+
+        <details class="seccion-menu">
+            <summary>Sándwiches</summary>
+
+            <div class="lista-platos">
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Labeko</span>
+                        <div class="precio-alergenos">
+                            <span class="badge huevo">Huevo</span>
+                            <span class="badge lacteos">Lácteos</span>
+                            <span class="precio">7,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Ali-Oli, piperrada, pollo y calabacín. (Opción bocata o pan pasiego)</p>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Bakiola</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span>
+                            <span class="badge lacteos">Lácteos</span>
+                            <span class="precio">4,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Jamón (serrano o york) y queso.</p>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Atxandi</span>
+                        <div class="precio-alergenos">
+                            <span class="badge pescado">Pescado</span>
+                            <span class="badge huevo">Huevo</span>
+                            <span class="badge gluten">Gluten</span>
+                            <span class="badge lacteos">Lácteos</span>
+                            <span class="precio">6,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Jamón york, queso, lechuga, tomate, (huevo cocido o tortilla) y atún.</p>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Azpiunza</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span>
+                            <span class="badge huevo">Huevo</span>
+                            <span class="badge pescado">Pescado</span>
+                            <span class="precio">7,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Jamón serrano, queso, piperrada, tortilla, (bonito o anchoa).</p>
+                </div>
+
+            </div>
+        </details>
+
+        <!-- SECCIÓN: BOCADILLOS -->
+
+        <details class="seccion-menu">
+            <summary>Bocadillos</summary>
+
+            <div class="lista-platos">
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Zuluaga</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span>
+                            <span class="badge lacteos">Lácteos</span>
+                            <span class="precio">5,50 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Bacón y queso.</p>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Gaztaka</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span>
+                            <span class="badge lacteos">Lácteos</span>
+                            <span class="precio">7,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Pechuga de pollo, queso de cabra y champiñones.</p>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Basakoetxe</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span>
+                            <span class="precio">8,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Filete de ternera, jamón y pimiento verde.</p>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Iberlanda</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span>
+                            <span class="precio">7,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Salchicha bratwurst, bacón y cebolla caramelizada.</p>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Zollo</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span>
+                            <span class="badge huevo">Huevo</span>
+                            <span class="precio">7,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Tortilla, pan tumaca, pimiento verde y jamón.</p>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Madalena</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span>
+                            <span class="badge huevo">Huevo</span>
+                            <span class="badge lacteos">Lácteos</span>
+                            <span class="precio">7,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Tortilla, bacón y queso.</p>
+                </div>
+
+            </div>
+        </details>
+
+        <!-- SECCIÓN: RACIONES -->
+
+        <details class="seccion-menu">
+            <summary>Raciones</summary>
+
+            <div class="lista-platos">
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Patatas con salsa (gajo o normales)</span>
+                        <span class="precio">5,00 €</span>
+                    </div>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Chorizo frito</span>
+                        <span class="precio">4,00 €</span>
+                    </div>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Croquetas</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span>
+                            <span class="badge huevo">Huevo</span>
+                            <span class="badge lacteos">Lácteos</span>
+                            <span class="precio">6,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Jamón, hongos o carrilleras.</p>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Pimientos verdes</span>
+                        <span class="precio">5,00 €</span>
+                    </div>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Alitas de pollo</span>
+                        <span class="precio">6,00 €</span>
+                    </div>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Nuggets de pollo</span>
+                        <div class="precio-alergenos">
+                            <span class="badge gluten">Gluten</span>
+                            <span class="badge huevo">Huevo</span>
+                            <span class="precio">5,00 €</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Surtido de ibéricos</span>
+                        <span class="precio">16,00 €</span>
+                    </div>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Calamares romana</span>
+                        <div class="precio-alergenos">
+                            <span class="badge pescado">Pescado</span>
+                            <span class="precio">5,00 €</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Queso de oveja</span>
+                        <div class="precio-alergenos">
+                            <span class="badge lacteos">Lácteos</span>
+                            <span class="precio">4,00 €</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Txopitos</span>
+                        <div class="precio-alergenos">
+                            <span class="badge pescado">Pescado</span>
+                            <span class="precio">7,00 €</span>
+                        </div>
+                    </div>
+                    <p class="descripcion">Solo domingos y festivos.</p>
+                </div>
+
+            </div>
+        </details>
+
+        <!-- SECCIÓN: POR ENCARGO -->
+
+        <details class="seccion-menu">
+            <summary>Por Encargo</summary>
+
+            <div class="lista-platos">
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Codillo</span>
+                        <span class="precio">18,00 €</span>
+                    </div>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Pollo Asado</span>
+                        <span class="precio">11,00 €</span>
+                    </div>
+                </div>
+
+                <div class="plato">
+                    <div class="imagen-plato">
+                        <div class="placeholder-proximamente">Próximamente 📷</div>
+                    </div>
+                    <div class="plato-cabecera">
+                        <span class="nombre">Tortilla de Patatas</span>
+
+                        <div class="precio-alergenos">
+                            <span class="badge huevo">Huevo</span>
+                            <span class="precio">15,00 €</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="encargo-info">
+
+                <p class="info-encargo">
+                    Los siguientes platos requieren encargo previo.
+                    Puede realizar su pedido llamando al
+                    <strong>676 07 48 39</strong> o desde la sección
+                    <a href="./reservas.html">Reserva y Encargos</a>.
+                </p>
+
+                <h3>Para grupos (mínimo 6 personas)</h3>
+
+                <button class="menu-toggle" aria-label="Abrir men"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+            <ul>
+                    <li>Alubias rojas con sus sacramentos</li>
+                    <li>Bacalao a la vizcaína o al pil-pil</li>
+                    <li>Paella de marisco o de carne</li>
+                </ul>
+
+            </div>
+
+        </details>
+
+    
+    </main>
+
+    <footer>
+    <div class="copyright">
+        <div>
+            <h3>Taberna Iberlanda</h3>
+            <p>
+                
+                Tradición, sabor y cocina casera en Arrankudiaga.
+                
+            </p>
+            <span id="copyright"></span>
+        </div>
+    </div>
+
+    <div class="enlacesFooter">
+        <p>Enlaces</p>
+        <nav>
+            
+                <a href="/Iberlanda/es/index.html">Inicio</a>
+                <a href="/Iberlanda/es/carta.html">Nuestra Carta</a>
+                <a href="/Iberlanda/es/contacto.html">Contacto</a>
+                <a href="/Iberlanda/es/reservas.html">Reserva</a>
+            
+        </nav>
+    </div>
+
+    <div class="politicasFooter">
+        <p>Políticas</p>
+        <a href="/Iberlanda/es/politica-cookies.html">
+            Política de cookies
+        </a>
+        <a href="/Iberlanda/es/politica-privacidad.html">
+            Política de privacidad
+        </a>
+    </div>
+</footer>
+
+    <div id="cookie-banner">
+    <div class="cookie-text">
+        
+        Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Si continúa navegando, consideramos que acepta su uso. Puede obtener más información en nuestra <a href="/Iberlanda/es/politica-cookies.html">Política de Cookies</a>.
+        
+    </div>
+    <div class="cookie-buttons">
+        <button id="accept-cookies">Aceptar</button>
+        <button id="decline-cookies">Rechazar</button>
+    </div>
+</div>
+
+    
+    <script src="/Iberlanda/funciones/menu.js" defer></script>
+    <script src="/Iberlanda/funciones/cookies.js" defer></script>
+    <script src="/Iberlanda/funciones/a%C3%B1oCopy.js" defer></script>
+    
+    <script src="/Iberlanda/funciones/filtros-carta.js" defer></script>
+    
+</body>
+</html>
