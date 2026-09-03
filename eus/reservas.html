@@ -1,0 +1,98 @@
+﻿---
+layout: default
+title: "Reservas - Tberna Iberlanda"
+lang: eus
+is_home: false
+custom_js: reservas.js
+---
+
+
+
+
+        <div class="opciones-servicio">
+
+            <label>
+                <input type="radio" name="tipoServicio" value="reserva" checked>
+                Mahai Erreserba
+            </label>
+
+            <label>
+                <input type="radio" name="tipoServicio" value="encargo">
+                Janari Eskaera
+            </label>
+
+        </div>
+
+        <div id="formReserva">
+            <h1>Erreserbatu zure mahaia:</h1>
+
+            <form class="formulario-reserva">
+
+                <label for="nombre">Izena</label>
+                <input type="text" id="nombre" required>
+
+                <label for="telefono">Telefonoa</label>
+                <input type="tel" id="telefono" required>
+
+                <label for="personas">Pertsonak</label>
+                <input type="number" id="personas" min="1" required>
+
+                <label for="fecha">Data</label>
+                <input type="date" id="fecha" required>
+
+                <label for="mensaje">Oharrak</label>
+                <textarea id="mensaje"></textarea>
+
+                <button type="submit">Erreserba Eskatu</button>
+            </form>
+        </div>
+
+        <div id="formEncargo" style="display:none;">
+            <h1>Eskaera bidez:</h1>
+
+            <form class="formulario-reserva">
+
+                <label for="nombreEncargo">Izena</label>
+                <input type="text" id="nombreEncargo" required>
+
+                <label for="telefonoEncargo">Telefonoa</label>
+                <input type="tel" id="telefonoEncargo" required>
+
+                <label for="producto">Produktua</label>
+
+                <select id="producto">
+
+                    <option>Codillo</option>
+                    <option>Pollo Asado</option>
+                    <option>Tortilla de Patatas</option>
+                    <option>Alubias rojas con sacramentos</option>
+                    <option>Bacalao a la vizcaína</option>
+                    <option>Bacalao al pil-pil</option>
+                    <option>Paella de marisco</option>
+                    <option>Paella de carne</option>
+
+                </select>
+
+                <label for="cantidad">Kopurua</label>
+                <input type="number" id="cantidad" min="1" value="1">
+
+                <label for="fechaRecogida">
+                    Jasotzeko data
+                </label>
+
+                <input type="date" id="fechaRecogida" required>
+
+                <label for="observacionesEncargo">
+                    Oharrak
+                </label>
+
+                <textarea id="observacionesEncargo"></textarea>
+
+                <button type="submit">
+                    Eskaera Egin
+                </button>
+
+            </form>
+
+        </div>
+    
