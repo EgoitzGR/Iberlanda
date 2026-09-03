@@ -1,0 +1,42 @@
+<footer>
+    <div class="copyright">
+        <div>
+            <h3>Taberna Iberlanda</h3>
+            <p>
+                {% if page.lang == 'eus' %}
+                Ohitura, zapore eta etxeko janaria Arrankudiagan.
+                {% else %}
+                Tradición, sabor y cocina casera en Arrankudiaga.
+                {% endif %}
+            </p>
+            <span id="copyright"></span>
+        </div>
+    </div>
+
+    <div class="enlacesFooter">
+        <p>{% if page.lang == 'eus' %}Estekak{% else %}Enlaces{% endif %}</p>
+        <nav>
+            {% if page.lang == 'eus' %}
+                <a href="{{ '/eus/index.html' | relative_url }}">Hasiera</a>
+                <a href="{{ '/eus/carta.html' | relative_url }}">Gure Karta</a>
+                <a href="{{ '/eus/contacto.html' | relative_url }}">Kontaktua</a>
+                <a href="{{ '/eus/reservas.html' | relative_url }}">Erreserbak</a>
+            {% else %}
+                <a href="{{ '/es/index.html' | relative_url }}">Inicio</a>
+                <a href="{{ '/es/carta.html' | relative_url }}">Nuestra Carta</a>
+                <a href="{{ '/es/contacto.html' | relative_url }}">Contacto</a>
+                <a href="{{ '/es/reservas.html' | relative_url }}">Reserva</a>
+            {% endif %}
+        </nav>
+    </div>
+
+    <div class="politicasFooter">
+        <p>{% if page.lang == 'eus' %}Politikak{% else %}Políticas{% endif %}</p>
+        <a href="{{ '/' | append: page.lang | append: '/politica-cookies.html' | relative_url }}">
+            {% if page.lang == 'eus' %}Cookien politika{% else %}Política de cookies{% endif %}
+        </a>
+        <a href="{{ '/' | append: page.lang | append: '/politica-privacidad.html' | relative_url }}">
+            {% if page.lang == 'eus' %}Pribatutasun politika{% else %}Política de privacidad{% endif %}
+        </a>
+    </div>
+</footer>

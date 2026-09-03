@@ -1,0 +1,58 @@
+/* =========================================================
+   VARIABLES Y COLORES (Opción C: Fresco y Local)
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+    /* Paleta Fresco y Local (Taberna Vasca) */
+    --color-principal: #2c4c3b; /* Verde Oliva oscuro */
+    --color-secundario: #3b5f4c; /* Verde Oliva medio */
+    --color-fondo: #f9f8f6; /* Blanco roto / Marfil */
+    --color-acento: #8b5a2b; /* Madera cálida */
+    --color-texto: #1f2924; /* Verde muy oscuro casi negro */
+    --color-texto-ligero: #4b5e54; /* Gris verdoso */
+    --color-tarjeta: #ffffff; /* Blanco puro para contraste */
+    
+    /* Sombras y Radios */
+    --sombra-suave: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --sombra-fuerte: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --radio-bordes: 12px;
+    
+    /* Fuentes */
+    --fuente-titulos: 'Playfair Display', serif;
+    --fuente-textos: 'Lora', serif;
+}
+
+/* Reset y Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fuente-textos);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-principal);
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--color-acento);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--color-principal);
+}
