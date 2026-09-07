@@ -1153,8 +1153,8 @@ footer
     }
 }
 .btn-telefono {
-    background-color: var(--color-acento);
-    color: var(--color-principal) !important;
+    background-color: var(--color-secundario);
+    color: var(--color-fondo) !important;
     padding: 0.5rem 1.2rem;
     border-radius: 50px;
     font-weight: bold;
@@ -1166,8 +1166,30 @@ footer
     width: auto !important;
     margin: 0 auto;
 }
+.btn-telefono:hover {
+    background-color: transparent !important;
+    color: var(--color-secundario) !important;
+    border-color: var(--color-secundario);
+}
 .btn-telefono svg {
     width: 20px !important;
     height: 20px !important;
     flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .plato-cabecera {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .lista-platos {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    .precio-alergenos {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
 }
